@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}XV Coin{% endblock %}</title>
+    <style>
+        body {
+            margin: 0;
+            background: #0d0d0d;
+            color: white;
+            font-family: Arial;
+        }
+        .nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #1a1a1a;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            box-shadow: 0 -2px 5px #000;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .content {
+            padding-bottom: 60px; /* nav menyu uchun joy */
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+
+    <div class="nav">
+        <a href="/">Uy</a>
+        <a href="/missions">Missiyalar</a>
+        <a href="/referral">Referal</a>
+        <a href="/withdraw">Yechish</a>
+    </div>
+</body>
+</html>
