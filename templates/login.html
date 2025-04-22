@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - XV Coin</title>
+    <style>
+        body {
+            background-color: #111;
+            color: white;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-box {
+            background: #222;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #000;
+        }
+        input {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+        }
+        button {
+            padding: 10px;
+            width: 100%;
+            background: #00ffcc;
+            color: black;
+            border: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h2>Login</h2>
+        <form action="/login" method="post">
+            <input type="text" name="username" placeholder="Foydalanuvchi nomi" required>
+            <input type="password" name="password" placeholder="Parol" required>
+            <button type="submit">Kirish</button>
+        </form>
+        <p style="margin-top:10px;">Yangi foydalanuvchimisiz? <a href="/register" style="color:#00ffcc;">Ro‘yxatdan o‘tish</a></p>
+    </div>
+</body>
+  </html>
