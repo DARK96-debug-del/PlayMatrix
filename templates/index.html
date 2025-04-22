@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Uy{% endblock %}
+
+{% block content %}
+<div style="text-align: center; padding: 30px;">
+    <h2>Salom, {{ user.username }}</h2>
+    <p>Balans: <strong>{{ user.balance }} UC</strong></p>
+    <p>Energiya: {{ user.energy }} / 100</p>
+
+    <form method="POST" action="/click">
+        <button style="padding: 10px 30px; background: black; color: white; font-size: 18px; border-radius: 50%; border: 2px solid white;">
+            XV
+        </button>
+    </form>
+</div>
+{% endblock %}
